@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title>QM Mag Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+         <script src="js/script.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+
+<body>
+<div class="container-fluid">
+<!-- Navbar (sit on top) -->
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">QM Mag Calculator</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+
+  <form class="vcenter" action="/action_page.php">
+
+  <div class="container">
+    <div class="row">
+      <div class="radio">
+  <h3>Select Magnetic Shape:</h3>
+      <div class="col-md-4">
+        <label>
+    <input type="radio" name="gender" value="male"><img src="img/blue-01.png">
+      </label>
+</div>
+    <div class="col-md-4">
+      <label>
+  <input type="radio" name="gender" value="female"><img src="img/blue-02.png">
+  </label>
+  </div>
+
+
+    <div class="col-md-4">
+      <label>
+  <input type="radio" name="gender" value="other"><img src="img/blue-03.png">
+    </label>
+  </div>
+  </div>
+</div>
+</div>
+<div class="container">
+
+
+<div class="dropdown">
+  <div class="row">
+      <div class="col-md-3">
+    <h3>Grade:</h3>
+  </div>
+    <div class="col-md-9">
+    <select name="cars">
+      <option value="volvo">N35</option>
+      <option value="saab">N38</option>
+      <option value="fiat">N40</option>
+      <option value="audi">N42</option>
+      <option value="volvo">N45</option>
+      <option value="saab">N48</option>
+      <option value="fiat">N50</option>
+      <option value="audi">N52</option>
+      <option value="volvo">N55</option>
+      <option value="saab">N33SH</option>
+      <option value="fiat">N30UH</option>
+    </select>
+  </div>
+    </div>
+  </div>
+    <!--automatically pull info from grade to inform this-->
+    <!--<div class="row">
+    <div class="dropdown">
+        <h3>Br:</h3><br/>
+        <select name="cars">
+          <option value="volvo">11.9</option>
+          <option value="saab">12.3</option>
+          <option value="fiat">12.6</option>
+          <option value="audi">13</option>
+          <option value="volvo">13.5</option>
+          <option value="saab">14</option>
+          <option value="fiat">14.1</option>
+          <option value="audi">14.5</option>
+          <option value="volvo">14.9</option>
+          <option value="saab">11.5</option>
+          <option value="fiat">11</option>
+        </select>
+        </div>
+      </div>-->
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Thickness:</h3>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="fname" class="input"><br>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3" id="div-length">
+  <h3>Length:</h3>
+  </div>
+  <div class="col-md-6">
+  <input type="text" name="fname" class="input"><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-3" id="div-width">
+<h3>Width:</h3>
+</div>
+<div class="col-md-6">
+<input type="text" name="fname" class="input"><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+<h3>ID:</h3>
+</div>
+<div class="col-md-6">
+<input type="text" name="fname" class="input"><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+<h3>OD:</h3>
+</div>
+<div class="col-md-6">
+<input type="text" name="fname" class="input"><br>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <h3>Diameter:</h3>
+    </div>
+    <div class="col-md-6">
+     <input type="text" name="fname" class="input"><br>
+   </div>
+  </div>
+  <div class="force"><p class="weight">Force = <div class="radio">
+  <div class="col-md-6">
+<input type="radio" name="gender" value="male">N
+</div>
+<div class="col-md-6">
+<input type="radio" name="gender" value="female">lbs
+</div>
+</div></p></div>
+
+                <!--form validation notes: numbers for inches up to 5", 0 to 30 mm-->
+                <!--field imputs for all but grade & type-->
+
+                <!--KGs for BR, take median number-->
+                <!--F=answer, units in N and LBs-->
+
+    <br><br>
+    <input type="submit" class="button">
+  </form>
+
+
+
+<!-- End page content -->
+</div>
+</div>
+<!--shape-->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+
+</footer>
+</div>
+</body>
+</html>
